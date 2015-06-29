@@ -14,6 +14,9 @@
 		D60A7CFD1B41E75000989AC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60A7CFC1B41E75000989AC3 /* Images.xcassets */; };
 		D60A7D001B41E75000989AC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60A7CFE1B41E75000989AC3 /* LaunchScreen.xib */; };
 		D60A7D0C1B41E75000989AC3 /* BasicKifDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A7D0B1B41E75000989AC3 /* BasicKifDemoTests.m */; };
+		D60A7D171B41ED8D00989AC3 /* KifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A7D161B41ED8D00989AC3 /* KifTests.m */; };
+		D60A7D1A1B41F01500989AC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A7D191B41F01500989AC3 /* LoginViewController.m */; };
+		FE3AB3F9B50781D7593256F6 /* libPods-BasicKifDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2D44F2409FE0505F3BAFA8 /* libPods-BasicKifDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2D44F2409FE0505F3BAFA8 /* libPods-BasicKifDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicKifDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		632E94EEC470B3564D2FFE32 /* Pods-BasicKifDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicKifDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicKifDemoTests/Pods-BasicKifDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D60A7CEC1B41E75000989AC3 /* BasicKifDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicKifDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A7CF01B41E75000989AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60A7CF11B41E75000989AC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,11 @@
 		D60A7D051B41E75000989AC3 /* BasicKifDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicKifDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A7D0A1B41E75000989AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60A7D0B1B41E75000989AC3 /* BasicKifDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicKifDemoTests.m; sourceTree = "<group>"; };
+		D60A7D151B41ED8D00989AC3 /* KifTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KifTests.h; sourceTree = "<group>"; };
+		D60A7D161B41ED8D00989AC3 /* KifTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KifTests.m; sourceTree = "<group>"; };
+		D60A7D181B41F01500989AC3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D60A7D191B41F01500989AC3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EFC0AAF86DA86B16D95D6472 /* Pods-BasicKifDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicKifDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicKifDemoTests/Pods-BasicKifDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +64,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3AB3F9B50781D7593256F6 /* libPods-BasicKifDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33083F08DA1C3EAE100640FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				632E94EEC470B3564D2FFE32 /* Pods-BasicKifDemoTests.debug.xcconfig */,
+				EFC0AAF86DA86B16D95D6472 /* Pods-BasicKifDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80F4BF6E3D9BF9BA0E498CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D2D44F2409FE0505F3BAFA8 /* libPods-BasicKifDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D60A7CE31B41E75000989AC3 = {
 			isa = PBXGroup;
 			children = (
 				D60A7CEE1B41E75000989AC3 /* BasicKifDemo */,
 				D60A7D081B41E75000989AC3 /* BasicKifDemoTests */,
 				D60A7CED1B41E75000989AC3 /* Products */,
+				33083F08DA1C3EAE100640FF /* Pods */,
+				80F4BF6E3D9BF9BA0E498CB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +115,8 @@
 				D60A7CF41B41E75000989AC3 /* AppDelegate.m */,
 				D60A7CF61B41E75000989AC3 /* ViewController.h */,
 				D60A7CF71B41E75000989AC3 /* ViewController.m */,
+				D60A7D181B41F01500989AC3 /* LoginViewController.h */,
+				D60A7D191B41F01500989AC3 /* LoginViewController.m */,
 				D60A7CF91B41E75000989AC3 /* Main.storyboard */,
 				D60A7CFC1B41E75000989AC3 /* Images.xcassets */,
 				D60A7CFE1B41E75000989AC3 /* LaunchScreen.xib */,
@@ -107,6 +139,8 @@
 			children = (
 				D60A7D0B1B41E75000989AC3 /* BasicKifDemoTests.m */,
 				D60A7D091B41E75000989AC3 /* Supporting Files */,
+				D60A7D151B41ED8D00989AC3 /* KifTests.h */,
+				D60A7D161B41ED8D00989AC3 /* KifTests.m */,
 			);
 			path = BasicKifDemoTests;
 			sourceTree = "<group>";
@@ -143,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60A7D121B41E75000989AC3 /* Build configuration list for PBXNativeTarget "BasicKifDemoTests" */;
 			buildPhases = (
+				8A8816902C32E1119515BF64 /* Check Pods Manifest.lock */,
 				D60A7D011B41E75000989AC3 /* Sources */,
 				D60A7D021B41E75000989AC3 /* Frameworks */,
 				D60A7D031B41E75000989AC3 /* Resources */,
+				BAB7FB5E48AB9F8449565D21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +250,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A8816902C32E1119515BF64 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB7FB5E48AB9F8449565D21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BasicKifDemoTests/Pods-BasicKifDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D60A7CE81B41E75000989AC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A7D1A1B41F01500989AC3 /* LoginViewController.m in Sources */,
 				D60A7CF81B41E75000989AC3 /* ViewController.m in Sources */,
 				D60A7CF51B41E75000989AC3 /* AppDelegate.m in Sources */,
 				D60A7CF21B41E75000989AC3 /* main.m in Sources */,
@@ -229,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A7D171B41ED8D00989AC3 /* KifTests.m in Sources */,
 				D60A7D0C1B41E75000989AC3 /* BasicKifDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +436,7 @@
 		};
 		D60A7D131B41E75000989AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632E94EEC470B3564D2FFE32 /* Pods-BasicKifDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +456,7 @@
 		};
 		D60A7D141B41E75000989AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC0AAF86DA86B16D95D6472 /* Pods-BasicKifDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +489,7 @@
 				D60A7D111B41E75000989AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D60A7D121B41E75000989AC3 /* Build configuration list for PBXNativeTarget "BasicKifDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +498,7 @@
 				D60A7D141B41E75000989AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
